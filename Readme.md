@@ -8,7 +8,7 @@ Findings of ACL 2023: [Do Large Language Models Know What They Don’t Know?](ht
 
 ## Introduction
 
-This repository contains the code and data related to the paper "[Do Large Language Models Know What They Don’t Know?]([2305.18153.pdf (arxiv.org)](https://arxiv.org/pdf/2305.18153.pdf))". In this paper, we explore and analyze the self-knowledge of large language models, and provide a dataset called *SelfAware* for evaluating the self-knowledge of these models. *SelfAware* includes 1032 unanswerable questions and 2337 answerable questions. We use the F1 score to evaluate the self-knowledge of large language models, and propose an automated method for extracting uncertainty meanings from the outputs of large language models.
+This repository contains the code and data related to the paper "[Do Large Language Models Know What They Don’t Know?](https://arxiv.org/pdf/2305.18153.pdf)". In this paper, we explore and analyze the self-knowledge of large language models, and provide a dataset called *SelfAware* for evaluating the self-knowledge of these models. *SelfAware* includes 1032 unanswerable questions and 2337 answerable questions. We use the F1 score to evaluate the self-knowledge of large language models, and propose an automated method for extracting uncertainty meanings from the outputs of large language models.
 ![Know-Unknow Quadrant](figures/know-unknow.png)
 
 
