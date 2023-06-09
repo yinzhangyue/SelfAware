@@ -2,7 +2,7 @@
 ![License](https://img.shields.io/badge/License-Apache%20License%202.0-green)
 ![Data License](https://img.shields.io/badge/Data%20License-CC--BY--SA--4.0-blue)
 
-Findings of ACL 2023: [Do Large Language Models Know What They Don’t Know?)](https://arxiv.org/pdf/2305.18153.pdf)
+Findings of ACL 2023: [Do Large Language Models Know What They Don’t Know?](https://arxiv.org/pdf/2305.18153.pdf)
 
 
 
