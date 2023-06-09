@@ -1,0 +1,11 @@
+openai
+torch
+backoff
+tenacity
+transformers
+sentencepiece
+jsonlines
+tqdm
+matplotlib
+ipdb
+simcse
