@@ -1,7 +1,7 @@
 {
     "dataset_name": "SelfAware",
     "quantity": 2337,
-    "description": "This dataset contains 1032 answerable and 2337 unanswerable questions. The unanswerable questions are sourced from knowledge-sharing platforms such as Quora and HowStuffWorks, while the answerable questions come from SQuAD, HotpotQA, and TriviaQA. The dataset is intended for research purposes only. For any commercial use, it is recommended to contact the author for permission",
+    "description": "This dataset contains 2337 answerable and 1032 unanswerable questions. The unanswerable questions are sourced from knowledge-sharing platforms such as Quora and HowStuffWorks, while the answerable questions come from SQuAD, HotpotQA, and TriviaQA. The dataset is intended for research purposes only. For any commercial use, it is recommended to contact the author for permission",
     "license": "cc-by-sa-4.0",
     "keywords": [
         "model self-knowledge",
