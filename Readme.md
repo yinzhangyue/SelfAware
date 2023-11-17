@@ -5,27 +5,26 @@
 Findings of ACL 2023: [Do Large Language Models Know What They Don’t Know?](https://arxiv.org/pdf/2305.18153.pdf)
 
 
-
-## Introduction
+## Introduction 📝
 
 This repository contains the code and data related to the paper "[Do Large Language Models Know What They Don’t Know?](https://arxiv.org/pdf/2305.18153.pdf)". In this paper, we explore and analyze the self-knowledge of large language models, and provide a dataset called *SelfAware* for evaluating the self-knowledge of these models. *SelfAware* includes 1032 unanswerable questions and 2337 answerable questions. We use the F1 score to evaluate the self-knowledge of large language models, and propose an automated method for extracting uncertainty meanings from the outputs of large language models.
 ![Know-Unknow Quadrant](figures/know-unknow.png)
 
 
-## Quick Links
+## Quick Links 🔗
+
 - [Do Large Language Models Know What They Don’t Know?](#do-large-language-models-know-what-they-dont-know)
-  - [Introduction](#introduction)
-  - [Quick Links](#quick-links)
-  - [Requirements](#requirements)
-  - [Data](#data)
-  - [Reproducing Baselines](#reproducing-baselines)
-  - [Evaluation](#evaluation)
-  - [Bug or Questions?](#bug-or-questions)
-  - [Citation](#citation)
+  - [Introduction 📝](#introduction-)
+  - [Quick Links 🔗](#quick-links-)
+  - [Requirements 📚](#requirements-)
+  - [Data 💾](#data-)
+  - [Reproducing Baselines 🚀](#reproducing-baselines-)
+  - [Evaluation 💻](#evaluation-)
+  - [Bug or Questions? 🤔](#bug-or-questions-)
+  - [Citation 📖](#citation-)
 
 
-
-## Requirements
+## Requirements 📚
 Please make sure you have the following requirements installed:
 - openai
 - torch
@@ -40,9 +39,7 @@ Please make sure you have the following requirements installed:
 - simcse
 
 
-
-
-## Data
+## Data 💾
 
 The data is located in the [SelfAware.json](data/SelfAware.json) file. When using it, please adhere to the CC-BY-SA-4.0 license. Below are some examples of the data:
 
@@ -70,7 +67,9 @@ Unanswerable questions:
 ```
 Each entry consists of a unique question ID, the question text, the answer (which is an array that can contain multiple answers, or null for unanswerable questions), a boolean indicating if the question is answerable or not, and the source from where the question is extracted.
 
-## Reproducing Baselines
+
+## Reproducing Baselines 🚀
+
 You can replicate our experiments by running the `run_model.py` script. For instance, here is the command to run the `text-davinci-003` model with only the question as input:
 ```bash
 python run_model.py --input-form Direct --model-name text-davinci-003
@@ -89,7 +88,8 @@ The script primarily includes three input arguments:
 
 You can also test more models as long as they're compatible with the `generate` method from the transformers library.
 
-## Evaluation
+
+## Evaluation 💻
 
 The evaluation code for SelfAware is located in `eval_model.py`. Below is an example of evaluating the `alpaca-7b` model:
 
@@ -100,19 +100,33 @@ python eval_model.py --filename  alpaca-7b/Direct_alpaca-7b_T_0.7.jsonl
 The evaluation results include Precision, Recall, F1 score, and the accuracy for answerable questions.
 
 
-## Bug or Questions?
+## Bug or Questions? 🤔
 
 If you have any suggestions or questions, feel free to email us at yinzhangyue@126.com. If you encounter any issues while using the code, or if you find any bugs, please open a new issue on GitHub. This is a preliminary work and we are very much open to any constructive feedback that could help us improve. Thank you for your attention!
 
 
-## Citation
+## Citation 📖
+
 If you are interested in our work, please use the following citation format when referencing our paper:
 ```bibtex
-@inproceedings{yin2023large,
-  title     = {Do Large Language Models Know What They Don't Know?},
-  author    = {Yin, Zhangyue and Sun, Qiushi and Guo, Qipeng and Wu, Jiawen and Qiu, Xipeng and Huang, Xuanjing},
-  url       = {https://arxiv.org/abs/2305.18153},
-  booktitle = {Findings of Association for Computational Linguistics (ACL)},
-  year      = {2023}
+@inproceedings{yin-etal-2023-large,
+    title = "Do Large Language Models Know What They Don{'}t Know?",
+    author = "Yin, Zhangyue  and
+      Sun, Qiushi  and
+      Guo, Qipeng  and
+      Wu, Jiawen  and
+      Qiu, Xipeng  and
+      Huang, Xuanjing",
+    editor = "Rogers, Anna  and
+      Boyd-Graber, Jordan  and
+      Okazaki, Naoaki",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2023",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-acl.551",
+    doi = "10.18653/v1/2023.findings-acl.551",
+    pages = "8653--8665"
 }
 ```
