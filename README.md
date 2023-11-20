@@ -6,10 +6,12 @@
 
 Findings of ACL 2023: [Do Large Language Models Know What They Don’t Know?](https://arxiv.org/pdf/2305.18153.pdf)
 
+
 ## Introduction 📝
 
 This repository contains the code and data related to the paper "[Do Large Language Models Know What They Don’t Know?](https://arxiv.org/pdf/2305.18153.pdf)". In this paper, we explore and analyze the self-knowledge of large language models, and provide a dataset called *SelfAware* for evaluating the self-knowledge of these models. *SelfAware* includes 1032 unanswerable questions and 2337 answerable questions. We use the F1 score to evaluate the self-knowledge of large language models, and propose an automated method for extracting uncertainty meanings from the outputs of large language models.
 ![Know-Unknow Quadrant](figures/know-unknow.png)
+
 
 ## Quick Links 🔗
 
@@ -22,6 +24,7 @@ This repository contains the code and data related to the paper "[Do Large Langu
   - [Evaluation 💻](#evaluation-)
   - [Bug or Questions? 🤔](#bug-or-questions-)
   - [Citation 📖](#citation-)
+
 
 ## Requirements 📚
 
@@ -37,6 +40,7 @@ Please make sure you have the following requirements installed:
 - matplotlib
 - ipdb
 - simcse
+
 
 ## Data 💾
 
@@ -66,6 +70,7 @@ Unanswerable questions:
 ```
 Each entry consists of a unique question ID, the question text, the answer (which is an array that can contain multiple answers, or null for unanswerable questions), a boolean indicating if the question is answerable or not, and the source from where the question is extracted.
 
+
 ## Reproducing Baselines 🚀
 
 You can replicate our experiments by running the `run_model.py` script. For instance, here is the command to run the `text-davinci-003` model with only the question as input:
@@ -86,6 +91,7 @@ The script primarily includes three input arguments:
 
 You can also test more models as long as they're compatible with the `generate` method from the transformers library.
 
+
 ## Evaluation 💻
 
 The evaluation code for SelfAware is located in `eval_model.py`. Below is an example of evaluating the `alpaca-7b` model:
@@ -96,9 +102,11 @@ python eval_model.py --filename  alpaca-7b/Direct_alpaca-7b_T_0.7.jsonl
 
 The evaluation results include Precision, Recall, F1 score, and the accuracy for answerable questions.
 
+
 ## Bug or Questions? 🤔
 
 If you have any suggestions or questions, feel free to email us at yinzhangyue@126.com. If you encounter any issues while using the code, or if you find any bugs, please open a new issue on GitHub. This is a preliminary work and we are very much open to any constructive feedback that could help us improve. Thank you for your attention!
+
 
 ## Citation 📖
 
