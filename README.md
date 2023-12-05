@@ -4,7 +4,7 @@
 ![Data License](https://img.shields.io/badge/Data%20License-CC--BY--SA--4.0-blue)
 ![python](https://img.shields.io/badge/python-3.8+-blue.svg)
 
-Findings of ACL 2023: [Do Large Language Models Know What They Don’t Know?](https://arxiv.org/pdf/2305.18153.pdf)
+Findings of ACL 2023: [Do Large Language Models Know What They Don’t Know?](https://aclanthology.org/2023.findings-acl.551/)
 
 
 ## Introduction 📝
