@@ -20,7 +20,9 @@ This repository contains the code and data related to the paper "[Do Large Langu
   - [Quick Links 🔗](#quick-links-)
   - [Requirements 📚](#requirements-)
   - [Data 💾](#data-)
+    - [Additional Datasets 📁](#additional-datasets-)
   - [Reproducing Baselines 🚀](#reproducing-baselines-)
+  - [Reproducing Baselines 🚀](#reproducing-baselines--1)
   - [Evaluation 💻](#evaluation-)
   - [Bug or Questions? 🤔](#bug-or-questions-)
   - [Citation 📖](#citation-)
@@ -69,6 +71,33 @@ Unanswerable questions:
 }
 ```
 Each entry consists of a unique question ID, the question text, the answer (which is an array that can contain multiple answers, or null for unanswerable questions), a boolean indicating if the question is answerable or not, and the source from where the question is extracted.
+
+
+### Additional Datasets 📁
+
+Considering the complexity of natural data, we have constructed additional datasets based on the types of unanswerable questions identified through manual analysis, combined with AI assistants, to facilitate future research and analysis.
+
+- **UMWP Benchmark**: We have expanded the "Too many variables" category into a new benchmark called UMWP. You can access it here: [UMWP Benchmark](https://aclanthology.org/2024.lrec-main.196/).
+- **Other Types of Data**: Other types of data have been uploaded to Google Drive. Access them here: [Additional Data](https://drive.google.com/drive/folders/1Yf0g-cyDURv-21R7YHxqeP0EufgapzWt?usp=sharing).
+
+These datasets are different from *SelfAware*, which consists of unanswerable questions genuinely posed by users on the internet. The new datasets are constructed with the help of AI assistants and therefore do not overlap with *SelfAware*.
+
+
+## Reproducing Baselines 🚀
+
+You can replicate our experiments by running the `run_model.py` script. For instance, here is the command to run the `text-davinci-003` model with only the question as input:
+```bash
+python run_model.py --input-form Direct --model-name text-davinci-003
+```
+And this is the command to run the `gpt-3.5-turbo-0301` model with an instruction included in the input:
+```bash
+python run_model.py --input-form Instruction --model-name gpt-3.5-turbo-0301
+```
+The script primarily includes three input arguments:
+- API-Key: This is your OpenAI API key, which is required to run GPT-related experiments.
+- input-form: The form of the input data.
+- model-name: The name of the model you're testing.
+- temperature: The temperature setting when generating text. It controls the randomness of the predictions. (Default 0.7)
 
 
 ## Reproducing Baselines 🚀
