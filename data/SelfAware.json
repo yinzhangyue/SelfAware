@@ -35904,8 +35904,8 @@
         {
             "question_id": 3149,
             "question": "For every 8 pounds Zoe and her friends recycled they earned one point. If Zoe recycled 25 pounds and her friends recycled 23 pounds, how many points did they earn?",
-            "answer": null,
-            "answerable": false,
+            "answer": ["6"],
+            "answerable": true,
             "source": "SelfAware"
         },
         {
